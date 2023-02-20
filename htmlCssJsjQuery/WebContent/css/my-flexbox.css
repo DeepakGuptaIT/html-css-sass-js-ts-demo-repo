@@ -1,0 +1,61 @@
+div.parent {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    justify-content: center;
+    background-color: aliceblue;
+    /* below alight item in cross axis */
+    align-items: center;
+    height: 200px;
+    gap: 10px;
+
+}
+
+div.child {
+    width: 100px;
+    flex: 0 1 auto;
+    height: 100px;
+    /*below applies to content inside child div ex- 1, 2,3 etc.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+
+}
+
+div.child.one,
+div.child2.one {
+    background-color: blueviolet;
+}
+
+div.child.two,
+div.child2.two {
+    background-color: red;
+}
+
+div.child.three,
+div.child2.three {
+    background-color: blue;
+}
+
+div.child.four,
+div.child2.four {
+    background-color: green;
+}
+
+/* example 2*/
+.parent2 {
+    display: flex;
+    height: 300px;
+    /* Or whatever */
+    background-color: bisque;
+}
+
+.child2 {
+    width: 100px;
+    /* Or whatever */
+    height: 100px;
+    /* Or whatever */
+    margin: auto;
+    /* Magic! */
+}
